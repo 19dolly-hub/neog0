@@ -9,7 +9,7 @@ translate.addEventListener("click", () => {
     fetch(fetchUrl)
     .then(response => response.json())
     .then(data => {
-        output.value = data.contents.translated;
+        output.textContent = data.contents.translated;
         // console.log(data);
     })
     .catch(() => {
