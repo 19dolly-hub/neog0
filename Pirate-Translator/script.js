@@ -4,7 +4,7 @@ const translate = document.getElementById("translate");
 const url = "https://api.funtranslations.com/translate/pirate.json";
 
 translate.addEventListener("click", () => {
-    if (input.value > 0) {
+    if (input.value !== "") {
         const fetchUrl = encodeUrl(input.value);
 
         fetch(fetchUrl)

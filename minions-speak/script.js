@@ -4,7 +4,8 @@ const output = document.getElementById("output");
 
 translate.addEventListener("click", () => {
     const text = input.value;
-    if (text > 0 ) {
+
+    if (text.length > 0 ) {
         const url = createUrl(text);
 
         fetch(url)
