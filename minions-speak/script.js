@@ -4,14 +4,19 @@ const output = document.getElementById("output");
 
 translate.addEventListener("click", () => {
     const text = input.value;
-    const url = createUrl(text);
+    if (text > 0 ) {
+        const url = createUrl(text);
 
-    fetch(url)
-    .then(res => res.json())
-    .then(data => {
-        output.textContent = data.contents.translated;
-    })
-    .catch(err => console.log(err))
+        fetch(url)
+        .then(res => res.json())
+        .then(data => {
+            output.textContent = data.contents.translated;
+        })
+        .catch(err => {
+            console.log(err);
+            output.textContent = "Something Went Wrong... Please try after sometime.";
+        })
+    }
 });
 
 function createUrl(rawText) {
