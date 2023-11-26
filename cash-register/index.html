@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Register Manager</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+        <h1>cash register manager</h1>
+    </header>
+
+    <main>
+        <div class="top">
+            <div class="inputs">
+                <label for="bill">Bill Amount:</label>
+                <input type="number" id="bill" placeholder="xxx" />
+        
+                <br>
+    
+                <label for="cash-amt">Cash Given:</label>
+                <input type="number" id="cash-amt" placeholder="xxx" />
+        
+            </div>
+    
+            <div class="btn">
+                <button type="button" id="calculate">Calculate</button>
+            </div>
+        </div>
+    
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Notes</th>
+                        <th>2000</th>
+                        <th>500</th>
+                        <th>100</th>
+                        <th>20</th>
+                        <th>10</th>
+                        <th>5</th>
+                        <th>1</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <th>No. of Notes</th>
+                        <td class="output" id="2000"></td>
+            
+                        <td class="output" id="500"></td>
+            
+                        <td class="output" id="100"></td>
+            
+                        <td class="output" id="20"></td>
+            
+                        <td class="output" id="10"></td>
+            
+                        <td class="output" id="5"></td>
+            
+                        <td class="output" id="1"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
