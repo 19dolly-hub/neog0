@@ -8,7 +8,7 @@ translate.addEventListener("click", () => {
 
     loader.style.display = "block";
 
-    if (text.length > 0 ) {
+    if (text.trim() !== "") {
         const url = createUrl(text);
 
         fetch(url)
